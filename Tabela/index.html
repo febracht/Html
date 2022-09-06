@@ -27,77 +27,85 @@ td{
 tr:nth-child(odd){
     background-color: lightpink;
 }
-
+.one{
+    top: 47.5px;
+    border: 1px solid black;
+    border-top: 1px black solid fixed;
+}
     </style>
 </head>
 <body>
     <table>
-        <caption>
-            <th>Song</th>
-            <th>Artist(s)</th>
-            <th>Album</th>
-            <th>Year</th>
-        </caption>
-        <tr>
-            <td>WITHOUT YOU (originally by The Kid Laroi)</td>
-            <td>Miley Cyrus, The Kid Laroi</td>
-            <td>-</td>
-            <td>2021</td>
-        </tr>
-        <tr>
-            <td>"Nothing Else Matters" (originally by Metallica)</td>
-            <td>Miley Cyrus, Trujillo, YoYoMa, Watt, Smith)</td>
-            <td>Plastic Hearts</td>
-            <td>2021</td>
-        </tr>
-        <tr>
-            <td>"WTF Do I Know"</td>
-            <td>Miley Cyrus</td>
-            <td>Plastic Hearts</td>
-            <td rowspan="8">2020</td> <!--colspan usado pra coluna-->
-        </tr>
-        <tr>
-            <td>"Golden G String"</td>
-            <td>Miley Cyrus</td>
-            <td>Plastic Hearts</td>
-
-        </tr>
-        <tr>
-            <td>"Angels Like You"</td>
-            <td>Miley Cyrus</td>
-            <td>Plastic Hearts</td>
-
-        </tr>
-        <tr>
-            <td>"Prisoner"</td>
-            <td>Miley Cyrus, Dua Lipa</td>
-            <td>Plastic Hearts</td>
-
-        </tr>
-        <tr>
-            <td>"Bad Karma"</td>
-            <td>Miley Cyrus, Joan Jett</td>
-            <td>Plastic Hearts</td>
-
-        </tr>
-        <tr>
-            <td>"Plastic Hearts"</td>
-            <td>Miley Cyrus</td>
-            <td>Plastic Hearts</td>
-
-        </tr>
-        <tr>
-            <td>"Night Crawling"</td>
-            <td>Miley Cyrus, Billy Idol</td>
-            <td>Plastic Hearts</td>
-
-        </tr>
-        <tr>
-            <td>"High"</td>
-            <td>Miley Cyrus</td>
-            <td>Plastic Hearts</td>
-
-        </tr>
+        <thead>
+            <caption>
+                <th rowspan="2" scope="col">Song</th>
+                <th colspan="2" scope="col">Artist(s)</th>
+                <th rowspan="2" scope="col">Album</th>
+                <th rowspan="2" scope="col">Year</th>            
+            <tr>
+                <th class="one">Writer(s)</th>
+                <th class="one">Producer(s)</th>
+            </tr>
+            </caption>
+        </thead>
+        <!--O th acompanha scope pra col ou row (linhas),
+        tanto para 1 quanto para grupos-->
+        <tbody>
+            <tr>
+                <td>WITHOUT YOU (originally by The Kid Laroi)</td>
+                <td>Miley Cyrus, The Kid Laroi</td>
+                <td rowspan="10">Miley Cyrus</td>
+                <td>-</td>
+                <td>2021</td>
+            </tr>
+            <tr>
+                <td>"Nothing Else Matters" (originally by Metallica)</td>
+                <td>Miley Cyrus, Trujillo, YoYoMa, Watt, Smith)</td>
+                <td>Plastic Hearts</td>
+                <td>2021</td>
+            </tr>
+            <tr>
+                <td>"WTF Do I Know"</td>
+                <td>Miley Cyrus</td>
+                <td>Plastic Hearts</td>
+                <td rowspan="8">2020</td> <!--colspan usado pra coluna-->
+            </tr>
+            <tr>
+                <td>"Golden G String"</td>
+                <td>Miley Cyrus</td>
+                <td>Plastic Hearts</td>
+            </tr>
+            <tr>
+                <td>"Angels Like You"</td>
+                <td>Miley Cyrus</td>
+                <td>Plastic Hearts</td>
+            </tr>
+            <tr>
+                <td>"Prisoner"</td>
+                <td>Miley Cyrus, Dua Lipa</td>
+                <td>Plastic Hearts</td>
+            </tr>
+            <tr>
+                <td>"Bad Karma"</td>
+                <td>Miley Cyrus, Joan Jett</td>
+                <td>Plastic Hearts</td>
+            </tr>
+            <tr>
+                <td>"Plastic Hearts"</td>
+                <td>Miley Cyrus</td>
+                <td>Plastic Hearts</td>
+            </tr>
+            <tr>
+                <td>"Night Crawling"</td>
+                <td>Miley Cyrus, Billy Idol</td>
+                <td>Plastic Hearts</td>
+            </tr>
+            <tr>
+                <td>"High"</td>
+                <td>Miley Cyrus</td>
+                <td>Plastic Hearts</td>
+            </tr>
+        </tbody>
     </table>
 </body>
 </html>
