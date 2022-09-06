@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StartUp</title>
+    <style>
+  @charset 'UTF-8';
+  @import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,200;0,300;0,400;1,200;1,300&display=swap');
+  
+*{
+    font-family: 'Jost', sans-serif;
+    
+}
+:root{
+    --cor0:#dcdef2;
+    --cor1:#c5c6d8;
+    --cor2:#6970aa;
+    --cor3:#f5f5fa;
+    --cor4:#343b79;
+
+}
+p{
+    padding: 0px 10px 0px;
+    margin: auto;
+}
+p,ol {
+    font-size: 12px;
+    margin-bottom: 15px;
+}
+h2{
+    font-size: 15px;
+    text-align: center;
+    margin-top: 0px;
+    padding-top: 15px;
+    padding-bottom: 0px;
+    
+}
+.cabeçalho{
+   text-align: center;
+}
+
+header{
+    background-image: linear-gradient( var(--cor3) ,var(--cor1) 80%);
+    box-shadow: 0px 0px 5px var(--cor1);   
+    margin-top: 0px;
+    color: var(--cor2);
+    position: fixed;
+    width: 100%;
+    
+}
+body{
+
+    background-color: var(--cor3);
+    margin: auto;
+}
+
+main{
+    min-width: 200px;
+    max-width: 800px;
+    padding: 170px 15px 100px;
+    margin:auto;
+}
+h1{
+    margin-top: 30px;
+    font-size: 20px;
+}
+nav{
+
+    text-align: center;
+    margin: auto;
+}
+button{
+    width: 100px;
+    border: 0px;
+    text-decoration: none;
+    background-color: transparent;
+    
+}
+a{
+    text-decoration: none;
+    padding: 5px;
+    margin: 5px;
+
+}
+footer{
+    background-color: var(--cor0);
+    padding: 15px 20px 5px;   
+    text-align: center;
+}
+img{
+    width: 100%;
+}
+aside{
+    background-color: var(--cor0);
+    border-radius: 10px 10px 0px 0px;
+    padding-bottom: 2px;
+    box-shadow: 2px 2px 5px 0px #6970aa5d;
+}
+aside > h1{
+    background-color: var(--cor1);
+    padding: 10px;
+    border-radius: 10px 10px 0px 0px;
+}
+/*---------------------------*/
+a:hover{
+    color: var(--cor4);
+    text-decoration: underline;
+
+}
+button > .menuum{ 
+    display: none;
+}
+button:hover > .menuum{
+    display: block;
+}
+button > .menudois{ 
+    display: none;
+}
+button:hover > .menudois{
+    display: block;
+}
+a:visited{
+    color: var(--cor2);
+}
+a:visited:hover{
+    color: var(--cor4);
+}
+main > span{
+    display: block;
+    text-align: center;
+    margin:auto;
+}
+main > span > a::after{
+    content: '\00A0\1F50E';
+}
+div.video {
+    box-sizing: content-box;
+}
+
+
+
+</style>
+</head>
+
+<!---------------------------->
+
+
+<body>
+
+<header>
+<h2>StartUp: Ideias Revolucionárias</h2>
+<p class="cabeçalho">O seguinte site hospeda grandes ideias de programação 
+    <br> para o futuro, mudanças nacionais acontecerão, <em>stay tuned!</em></p>
+<nav>
+        <button class="home"><a href="index.html">Home</a></button> 
+    
+  <span>
+      
+            <button class="ideiaum"><a href="ideia1.html">Ideia I</a>
+            <a class="menuum" href="ideia1.html">Introdução</a>
+            <a class="menuum" href="ideia1.html">Ideia</a></button>
+            <button class="ideiadois"><a href="ideia2.html">Ideia II</a>
+            <a class="menudois" href="ideia2.html">Introdução</a>
+            <a class="menudois" href="ideia2.html">Ideia</a></button>
+  </span>
+
+</nav>
+</header>
+
+<main>
+    <picture>
+        <source media="(max-width: 350px)" srcset="P.png" type="image/png">
+        <source media="(max-width: 850px)" srcset="M.png" type="image/png">
+        <img src="G.png" alt="Imagem grande para web">
+    </picture>
+<h1>O que é programação?</h1>
+<p><em>1. Acto ou efeito de programar; plano; programa; conjunto de programas ou planos.</em></p>
+<p>Programação é o processo de escrita, teste e manutenção de um programa de computador. 
+     programa é escrito em uma linguagem de programação, embora seja possível, com alguma dificuldade, 
+     o escrever diretamente em linguagem de máquina. Diferentes partes de um programa podem ser escritas 
+     em diferentes linguagens.</p>
+     <span>
+         <a href="https://www.totvs.com/blog/developers/front-end/#:~:text=Front%2Dend%3A%20o%20que%20%C3%A9,%2C%20sites%2C%20aplicativos%2C%20etc.">Front-end</a>
+         <a href="https://www.totvs.com/blog/developers/back-end/">Back-end</a>
+         <a href="https://www.totvs.com/blog/carreiras/desenvolvedor-full-stack/">Fullstack</a>
+     </span>
+<h1>Linguagem de programação</h1>
+<p>A linguagem de programação é um método padronizado, formado por um conjunto de regras sintáticas 
+    e semânticas, de implementação de um código fonte - que pode ser compilado e transformado em um 
+    programa de computador, ou usado como script interpretado - que informará instruções de processamento ao computador.</p>
+<aside>
+    <h1>Cinco linguagens mais populares</h1>
+    <ol>
+        <li>JavaScript</li>
+        <li>Python</li>
+        <li>Java</li>
+        <li>PHP</li>
+        <li>C#</li>
+    </ol>
+</aside>
+
+<h1>Cursos para iniciantes</h1>
+<div class="video">
+    <iframe width="263" height="140"
+    src="https://www.youtube.com/embed/Ejkb_YpuHWs"
+    title="YouTube video player"
+    frameborder="0"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+    allowfullscreen></iframe>
+    
+    <iframe width="263" height="140"
+    src="https://www.youtube.com/embed/vPNIAJ9B4hg"
+    title="YouTube video player"
+    frameborder="0"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+    allowfullscreen></iframe>
+    
+    <iframe width="263" height="140"
+    src="https://www.youtube.com/embed/ofFgnDtn_1c"
+    title="YouTube video player"
+    frameborder="0"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+    allowfullscreen></iframe>
+</div>
+</main>
+    <footer>
+<p>Para mais vídeos<a target="_blank" href="https://www.cursoemvideo.com/cursos/">clique aqui!</a></p>
+    </footer>
+
+</body>
+
+
+
+
+
+
+
+
+
+</html>
