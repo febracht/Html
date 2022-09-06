@@ -1,0 +1,89 @@
+<caption>Online users</caption>
+
+<table>
+    <thead>
+        <tr>
+            <th>Nome</th>
+            <th>Idade</th>
+            <th>Cor</th>
+        </tr>
+    </thead>
+
+    <tbody>
+        <tr>
+            <td>Fernanda</td>
+            <td>24</td>
+            <td>blue</td>
+        </tr>
+       </tbody>
+
+       <tfoot>
+        <td>Total:</td>
+        <td>1 user</td>
+       </tfoot>
+
+   </table>
+
+</body>
+</html>
+
+<!-- Teste 1 de como fazer tabela -->
+
+<Caption>Tabela de produtos produzidos x vendidos</Caption> <!--Título tabela-->
+
+
+<table> <!--Tag de tabela-->
+
+    <!--Edição de colunas-->
+<colgroup>
+    <col>
+    <col span="2" style="background-color: rgb(115, 91, 138)">
+    <col span="2" style="background-color:rgb(0, 126, 168)">
+</colgroup>
+
+    <thead>
+    <tr> <!--Linha nova-->
+        <th rowspan="2"></th> <!--Ocupa os espaços vazios da coluna-->
+        <th colspan="2" scope="colgroup">Loja Maria</th>
+        <th colspan="2" scope="colgroup">Loja João</th>
+    </tr> 
+
+    <tr>
+        <th scope="col">Produzido</th>
+        <th scope="col">Vendido</th>
+        <th scope="col">Produzido</th>
+        <th scope="col">Vendido</th>
+
+    </tr>
+    </thead>    
+
+    <tbody>
+    <tr> <!--Linha 1-->
+        <th scope="row">Vassoura</th>
+        <td>60</td>
+        <td>50</td>
+        <td>70</td>
+        <td>40</td>
+    </tr>
+
+    <tr> <!--Linha 2-->
+        <th scope="row">Balde</th>
+        <td>30</td>
+        <td>20</td>
+        <td>20</td>
+        <td>15</td>
+    </tr>
+    </tbody>
+
+    <tfoot>
+        <tr>
+            <th scope="row">Total:</th>
+            <td>90</td>
+            <td>70</td>
+            <td>90</td>
+            <td>55</td>
+        </tr>
+    </tfoot>
+</table>
+
+
