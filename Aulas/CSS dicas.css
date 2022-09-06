@@ -1,0 +1,45 @@
+/*CSS tips*/
+
+!important Quando não conseguir sobrepor o estilo de um HTML base, 
+digitar o !important vai sobrepor pro HTML que tu precisa
+
+@import serve para incluir um CSS externo.
+@import url(http://local.com/style.css);
+
+@media são regras condicionais para vários dispositivos.
+@media (min-width:500px) {
+    /*Regras aqui*/
+}
+
+@font-face é para colocar fontes externas.
+@font-face {
+    font-family: face;
+    src: url();
+}
+
+@keyframes serve para as animations do CSS.
+@keyframes identifier {
+    
+}
+
+{
+    /* background propriedades */
+    background-color: #000;
+    background-image: url(images/bg.gif);
+    background-repeat: no-repeat;
+    background-position: left top;
+
+    /* background shorthand (resumido)*/
+    background:#000 url(images/bg.gif) no-repeat left top;
+
+    /* font propriedades */
+    font-style: italic;
+    font-weight: bold;
+    font-size: .8em;
+    line-height: 1.2;
+    font-family: Arial, sans-serif;
+
+    /* font shorthand */ 
+    font: bold italic .8em/1.2 Arial, sans-serif;
+}
+

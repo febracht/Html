@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imagens Flexíveis</title>
+</head>
+<body>
+    
+<picture>
+    <source media="(max-width: 550px)" srcset="Imagens/imagemP.png" type="image/png">
+    <source media="(max-width: 1050px)" srcset="Imagens/imagemM.png" type="image/png">
+    <!--IMAGEM PADRÃO, mas caso a tela seja menor, aplicar source:media:type-->
+    <img src="Imagens/imagemG.png" alt="Imagem grande para web">
+</picture>
+
+</body>
+</html>
