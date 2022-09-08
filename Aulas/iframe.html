@@ -15,11 +15,24 @@
     --cor3:rgb(55, 167, 182);
 }
 .blackbox{
-    background-color:var(--cor1);
+    background-color:var(--cor3);
     top: 0px;
-    height: 25px;
+    height: 40px;
     width: 100%;
     position: fixed;
+    font-size: small;
+    color: var(--cor3);
+    vertical-align: middle;
+    text-align: center;
+    padding-top: 3px;
+}
+.blackbox > img{
+    height: 17px;
+    width: auto;
+    display: inline-block;
+    position: relative;
+    top: -2px;
+    padding-right: 5px;
 }
 body{
     margin: 0%;
@@ -41,7 +54,7 @@ nav{
     background-color: white;
     text-align: center;
     position: fixed;
-    top: 20px;
+    top: 30px;
 }
 .links{
     display: inline-block;
@@ -54,8 +67,44 @@ nav{
 .links:hover{
     color: var(--cor3);
 }
-main > div{
-    margin: 200px 20px 200px;
+.meio{
+    margin: 20px 35px 200px;
+    background-color: white;
+    text-align: center;
+}
+.headline{
+    text-align: center;
+    font-size: larger;
+    color: white;
+    background-color: var(--cor3);
+    border-radius: 10px 0px 10px 0px;
+    margin: 200px auto 0px;
+    width: 300px;
+    padding: 10px;
+}
+iframe{
+    width: 400px;
+    height: 450px;
+    padding: 0px 6px 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.descricao{
+    text-align: center;
+    font-size: small;
+    color: var(--cor3);
+    margin: 10px auto 10px;
+    padding-left: 50px;
+    padding-right:50px;
+    padding-top: 20px;
+    padding-bottom: 10px;
+}
+.explicacao{
+    text-align: center;
+    font-size: small;
+    color: var(--cor3);
+    width: 300px;
+    margin: auto;
 }
 footer{
     background-color: white;
@@ -75,7 +124,11 @@ footer > p > a{
 </head>
 <body>
     <header>
-        <div class="blackbox"></div>
+        <div class="blackbox">
+            <img src="instagram.png" alt="Instagram">
+            <img src="whatsapp.png" alt="whatsapp">
+            <img src="facebook.png" alt="Facebook">
+        </div>
         <nav>
                 <a href="iframe.html"><img src="imagemteciframe.png" alt="logo"></a>
                 <span>
@@ -87,35 +140,16 @@ footer > p > a{
         </nav>
     </header>
     <main>
-        <div>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            Fuga, eligendi. Non, ullam! Consequatur eum libero corporis
-            voluptate atque iste distinctio quaerat. Laborum, perferendis
-            aperiam! Officia ducimus incidunt iste delectus saepe.</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Fuga, eligendi. Non, ullam! Consequatur eum libero corporis
-                voluptate atque iste distinctio quaerat. Laborum, perferendis
-                aperiam! Officia ducimus incidunt iste delectus saepe.</p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Fuga, eligendi. Non, ullam! Consequatur eum libero corporis
-                    voluptate atque iste distinctio quaerat. Laborum, perferendis
-                    aperiam! Officia ducimus incidunt iste delectus saepe.</p>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Fuga, eligendi. Non, ullam! Consequatur eum libero corporis
-                        voluptate atque iste distinctio quaerat. Laborum, perferendis
-                        aperiam! Officia ducimus incidunt iste delectus saepe.</p>        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                            Fuga, eligendi. Non, ullam! Consequatur eum libero corporis
-                            voluptate atque iste distinctio quaerat. Laborum, perferendis
-                            aperiam! Officia ducimus incidunt iste delectus saepe.</p>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                                Fuga, eligendi. Non, ullam! Consequatur eum libero corporis
-                                voluptate atque iste distinctio quaerat. Laborum, perferendis
-                                aperiam! Officia ducimus incidunt iste delectus saepe.</p>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                                    Fuga, eligendi. Non, ullam! Consequatur eum libero corporis
-                                    voluptate atque iste distinctio quaerat. Laborum, perferendis
-                                    aperiam! Officia ducimus incidunt iste delectus saepe.</p>
-        </div>
+            <div>
+                <p class="headline">Escolha seu template favorito!</p>
+            </div>
+            <div class="meio">
+                <p class="descricao">Os templates já estão dimensionados para visualização em <em>smartfones!</em></p>
+                <p class="explicacao">Todos os templates foram desenvolvidos exclusivamente pela TechTemplates e estão prontos para uso comercial mediante matrícula.</p>
+                <iframe src="https://templatemo.com/live/templatemo_579_cyborg_gaming" frameborder="0"></iframe>
+                <iframe src="https://templatemo.com/live/templatemo_536_dream_pulse" frameborder="0"></iframe>
+                <iframe src="https://templatemo.com/live/templatemo_577_liberty_market" frameborder="0"></iframe>
+            </div>
     </main>
     <footer>
         <p>Designed by <a href="http://instagram.com/febracht">Fernanda Bracht</a></p>
