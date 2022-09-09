@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="favicon.ico">
+    <title>Redes sociais</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+        html, body{
+            height: 100vh;
+            width: 100vw;
+        }
+        main{
+            position: relative;
+            height: 100vh;
+            background-color: darkgray;
+        }
+        .telefone{
+            height: 350px;
+            width: 175px;
+            position: absolute;
+            background-image: url(iphone.png);
+            background-repeat: no-repeat;
+            background-size: cover;
+            top: 50%;
+            left:50%;
+            transform: translate(-50%,-50%);
+            border-radius: 10px;
+        }
+        iframe{
+            height: 350px;
+            width: 172px;
+            
+        }
+        img{
+            height: 50px;
+            border-radius: 50%;
+            margin: 10px;
+            box-shadow: 2px 2px 5px 1px rgba(0, 0, 0, 0.384);
+            box-sizing: border-box;
+            
+        }
+        img:hover{
+            border: 2px solid rgba(255, 255, 255, 0.336);
+            box-shadow: 2px 2px 5px 1px rgba(0, 0, 0, 0.849);
+            transform:translate(-5px, -5px) ;
+        }
+        .redes{
+            text-align: right;
+        }
+    </style>
+</head>
+<body>    
+    <main>
+        <section class="redes"><img src="logo-home.jpg" alt="">
+        <br>
+        <img src="logo-instagram.jpg" alt=""><br>
+        <img src="logo-youtube.jpg" alt=""><br>
+        <img src="logo-twitter.jpg" alt=""><br>
+        <img src="logo-facebook.jpg" alt="">  </section>
+        <section class="telefone">
+            <iframe src="tela.html" frameborder="0"></iframe>
+        </section>
+      
+    </main>
+</body>
+</html>
