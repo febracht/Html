@@ -24,20 +24,17 @@
             height: 350px;
             width: 175px;
             position: absolute;
-            background-image: url(iphone.png);
-            background-repeat: no-repeat;
-            background-size: cover;
             top: 50%;
             left:50%;
             transform: translate(-50%,-50%);
             border-radius: 10px;
+    
         }
         iframe{
             height: 350px;
             width: 172px;
-            
         }
-        img{
+        .redes>a>img{
             height: 50px;
             border-radius: 50%;
             margin: 10px;
@@ -45,7 +42,7 @@
             box-sizing: border-box;
             
         }
-        img:hover{
+        .redes>a>img:hover{
             border: 2px solid rgba(255, 255, 255, 0.336);
             box-shadow: 2px 2px 5px 1px rgba(0, 0, 0, 0.849);
             transform:translate(-5px, -5px) ;
@@ -53,19 +50,35 @@
         .redes{
             text-align: right;
         }
+        .iphone{
+            position: absolute;
+            z-index: 1;
+            width: 180px;
+            height: 350px;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            margin-left: -1px;
+        }
     </style>
 </head>
-<body>    
-    <main>
-        <section class="redes"><img src="logo-home.jpg" alt="">
-        <br>
-        <img src="logo-instagram.jpg" alt=""><br>
-        <img src="logo-youtube.jpg" alt=""><br>
-        <img src="logo-twitter.jpg" alt=""><br>
-        <img src="logo-facebook.jpg" alt="">  </section>
+<body>  
+    <img class="iphone" src="iphone.png" alt="">
+    <main>        
         <section class="telefone">
-            <iframe src="tela.html" frameborder="0"></iframe>
+            <iframe name="tela" referrerpolicy="no-referrer" src="tela.html" frameborder="0"></iframe>
+        
         </section>
+
+        <section class="redes">
+            <a href="index.html"><img src="logo-home.jpg" alt=""></a><br>
+            <a target="tela" href="instapag.html"><img src="logo-instagram.jpg" alt=""></a><br>
+            <a target="tela" href="youtubepag.html"><img src="logo-youtube.jpg" alt=""></a><br>
+            <a target="tela" href="twitterpag.html"><img src="logo-twitter.jpg" alt=""></a><br>
+            <a target="tela" href="facebookpag.html"><img src="logo-facebook.jpg" alt=""></a>  
+        </section>
+
+
       
     </main>
 </body>
